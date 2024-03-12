@@ -1,0 +1,18 @@
+Busca si tu contraseña está en RockYou.
+
+Buscar si habéis sido Pawneados.
+
+Buscar el algoritmo Hash más seguro de estos:  HMAC-SHA512,PBKDF2-HMAC-SHA256,bcrypt,LM,NT
+
+Rompe las contraseñas del ZIP, (we will rockyou).
+
+De la máquina de Windows sacar los Usuarios y Contraseñas:
+
+ -  dos que sale con Fuerza Bruta, el primero que aparece no es.
+
+ -  varios con diccionario con información de los alumnos de clase con las siguientes ideas de formatos y datos: nombre, nombreapellidos, empezar por mayúsculas o no, usuario de github, año en el que vais a aprobar (2022,2025) , e - 3, i -1, o-0, a @.
+
+
+Deshashea las Contraseñas del TXT dado con el siguiente formato: don+dosletrasminusculas+unamayuscula+dosnumero+unsimbolo+FIN    Por ejemplo: donniK12$FIN
+
+Ayuda: Tómate un Crunch.

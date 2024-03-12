@@ -1,0 +1,3 @@
+Haz que John The Ripper funcione con GPU.
+
+Hacer lo mismo con Hashcat.

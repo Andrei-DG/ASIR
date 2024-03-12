@@ -1,0 +1,18 @@
+Usa Verificación CRC de ficheros (por ejemplo KeePass).
+
+Crear un Cifrado Simétrico.
+
+Crear Claves.
+
+Exporta al servidor.
+
+Importar de más de un compañero.
+
+Firmar  y Cifrar fichero para varios compañeros.
+
+Verificación del fichero del compañero.
+
+Enviar fichero a un compañero cifrado asimétricamente.
+
+También con una contraseña simétrica cifrada asimétricamente cifrar un fichero simétricamente.
+

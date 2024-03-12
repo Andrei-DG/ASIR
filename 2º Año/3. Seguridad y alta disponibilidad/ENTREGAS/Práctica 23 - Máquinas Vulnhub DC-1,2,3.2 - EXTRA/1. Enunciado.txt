@@ -1,0 +1,5 @@
+Busca en internet cómo se ha resuelto los misterios de las máquinas virtuales preparadas DC-1, DC-2, DC-3.2.
+
+Busca por máquinas Vulnhub.
+
+Hay diferentes métodos, realiza el que quieras y adjunta el proceso en el documento.

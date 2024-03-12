@@ -1,0 +1,3 @@
+Instala el Bitwarden en un servidor local en Linux.
+
+Indica cómo compartirías la Base de datos de KeepassXC.

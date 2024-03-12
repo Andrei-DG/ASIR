@@ -1,0 +1,1 @@
+Escribe las reglas para NAT de las IPTables mostradas en clase a NFTables.

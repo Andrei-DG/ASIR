@@ -1,0 +1,5 @@
+Usa OpenVPN para conectar un cliente a una red.
+
+Usa ZeroTier para conectar dos redes físicas.
+
+Configura WireGuard en MikroTik.

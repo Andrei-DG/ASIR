@@ -1,0 +1,5 @@
+Usa Bitwarden y KeepassXC
+
+Explica las diferencias y posibilidades, céntrate en:
+
+- Facilidad de uso, posibles clientes, extensiones en navegador, aplicación de móvil...

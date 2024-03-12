@@ -1,0 +1,5 @@
+Intenta meter un archivo adjunto en GoPhish.
+
+Prueba con varios tipos.
+
+Mira si el tracker funciona para ver si el archivo se abre.

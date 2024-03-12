@@ -1,0 +1,13 @@
+Monta un WireGuard.
+
+ 1) Ubuntu Server con IPTables y NAT puesto.
+
+ 2) Ubuntu Server pero con Docker con IPTables y NAT puesto.
+
+ 3) Cuatro máquinas,  dos Ubuntus Server y dos Clientes conectado a cada uno.
+
+    - conexión entre los dos clientes, teniendo los servidores conectados con wireguard.
+
+    - estamos simulando conectar dos sedes de una empresa por VPN.
+
+ 4) ZeroTier entre dos máquinas.

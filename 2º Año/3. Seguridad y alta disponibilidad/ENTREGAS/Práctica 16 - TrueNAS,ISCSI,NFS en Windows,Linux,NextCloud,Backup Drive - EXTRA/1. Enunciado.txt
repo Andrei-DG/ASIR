@@ -1,0 +1,11 @@
+Instala el S.O. TrueNAS (anteriormente llamado FreeNAS) en una máquina virtual y:
+
+
+
+Montar el ISCSI y el NFS en Windows.
+
+Montar el ISCSI y el NFS en Linux.
+
+Montar el NextCloud.
+
+Haz un Backup en Google Drive.

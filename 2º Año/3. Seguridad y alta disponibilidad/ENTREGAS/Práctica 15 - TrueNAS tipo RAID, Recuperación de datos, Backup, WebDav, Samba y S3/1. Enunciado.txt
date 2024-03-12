@@ -1,0 +1,15 @@
+Instala el S.O. TrueNAS (anteriormente llamado FreeNAS) en una máquina virtual y:
+
+
+
+Crea Pools de Mirror y Raid-z.
+
+Dentro pon compartidos tipo Samba y prueba que funcionan desde Windows.
+
+Dentro pon compartido de WebDav, y buscar clientes para subir ficheros desde windows.
+
+Provoca el Fallo de algún disco y comprueba que siguen funcionando en Samba y arreglalo.
+
+Probar las herramientas de Backup que están puestas en el notion de clase.
+
+Hacer backups de Truenas a un Servidor S3.

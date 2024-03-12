@@ -1,0 +1,3 @@
+Configura un GoPhish.
+
+Luego prueba hacerte phishing a tí mismo.

@@ -1,0 +1,11 @@
+Haz búsquedas en Shodan y en Google con Google Dorks, explica para qué son las busquedas.
+
+Intenta encontrar Cámaras IP.
+
+Usa Nmap y Masscan para escanear la red del instituto, ¿qué máquinas hay?, ¿qué puertos tienen abiertos?
+
+Haz Nmap de la red 10.0.0.0/24 para ver Máquinas y Puertos abiertos
+
+Haz Nmap de la red 10.2.105.0/24 
+
+Usa Sherlock para buscar personas en redes sociales.

@@ -1,0 +1,9 @@
+Cambia el nombre del usuario a tí mismo y el nombre de las 3 máquinas, por ejemplo: externa, router e interna.
+
+3 maquinas virtuales, un Server y dos Clientes. 
+
+Al primer cliente quítale la puerta de enlace y hará de red externa.
+
+Instala un SSH y un Nginx en el cliente interno.
+
+En el server que hace de router, con las políticas por defecto a DROP, abre los puertos para que el cliente de la red externa pueda llegar a los servicios de la red interna.

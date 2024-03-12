@@ -1,0 +1,1 @@
+Usar el Firewall de PfSense para realizar la práctica de repaso que hicimos sobre diccionarios, hashes e iptables.
