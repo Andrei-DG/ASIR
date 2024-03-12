@@ -1,0 +1,5 @@
+Crea una página usando Python, Flask y MySQL. Es un Extra voluntario, por tanto investiga por internet qué es y cómo se usa Flask:
+
+
+
+La temática es abierta, pero tendrá que poderse añadir/modificar/borrar cosas.

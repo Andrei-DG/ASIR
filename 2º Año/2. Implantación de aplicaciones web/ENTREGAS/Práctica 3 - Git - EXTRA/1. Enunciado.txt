@@ -1,0 +1,13 @@
+Haz las dos siguiente partes por línea de comandos:
+
+
+
+Crea un repositorio en local y luego súbelo a Github.
+
+Hacer la primera práctica de Git básico pero con Gitlab.
+
+Investiga qué es Git Flow y haz uso de él, cada feature nueva simulala con un fichero md nuevo.
+
+
+
+EXTRA del EXTRA: borrar fichero de todos los commits de un repositorio.

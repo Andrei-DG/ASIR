@@ -1,0 +1,9 @@
+Instala y configura un wordpress, crea usuarios, páginas, post, cambia los estilos y los temas.
+
+Instala el plugin de WooComerce y haz una tienda.
+
+Haz un repositorio donde guardar la configuración de Wordpress y poder replicarlo en otro docker
+
+Pon un Readme al repositorio con las contraseñas y usuarios creados.
+
+Añade a oscarnovillo como colaborador del repositorio.

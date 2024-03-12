@@ -1,0 +1,9 @@
+Crea un script en Python para calcular el sueldo y gastos en la empresa:
+
+
+
+Una empresa paga a sus empleados con base en las horas trabajadas en la semana.
+
+Para esto, se registran los días que trabajó y las horas de cada día.
+
+Realiza un algoritmo para determinar el sueldo semanal de N trabajadores y además calcula cuánto pagó la empresa por los N empleados.

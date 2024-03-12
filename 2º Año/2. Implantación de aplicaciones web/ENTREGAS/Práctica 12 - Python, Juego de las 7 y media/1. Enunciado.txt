@@ -1,0 +1,15 @@
+Crea el juego de cartas de las siete y media en Python:
+
+
+
+Desarrolla un juego de cartas llamado 'Siete y medio'. 
+
+El juego consiste en que los jugadores compitan contra la banca para alcanzar una puntuación lo más cercana posible a 7.5 sin pasarse. 
+
+Cada jugador recibe inicialmente una carta y luego puede decidir si quiere más cartas para aumentar su puntuación. 
+
+Si un jugador alcanza exactamente 7.5 puntos, gana automáticamente. Si un jugador supera 7.5 puntos, pierde. Si ninguno alcanza los 7.5, gana el que tenga la puntuación más alta sin pasarse.
+
+La banca siempre juega con las mismas reglas. 
+
+Implementa funciones para crear la baraja, gestionar los jugadores, jugar rondas y determinar los resultados.

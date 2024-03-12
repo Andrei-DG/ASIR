@@ -1,0 +1,11 @@
+Crear gitignore de algún fichero y carpeta.
+
+Crear gist, crear y usar.
+
+Crear branches, TAG y Merge branches.
+
+Hacer fork de un repositorio.
+
+Hacer pull request y hacerlo entre ramas vuestras.
+
+Hacer cambios de algo después de hacer checkout.

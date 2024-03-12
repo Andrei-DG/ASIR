@@ -1,0 +1,29 @@
+{% extends "principal.html" %}
+{% block titulo %}
+Agregar producto
+{% endblock %}
+{% block contenido %}
+<section class="section">
+    <div class="columns">
+        <div class="column"><br><br>
+            <form action="{{url_for('guardar_producto')}}" method="post">
+                <br>
+                <br>
+                <br>
+                <br>
+                <h3 class="is-size-2" style="margin-left:32px;margin-top:10px;font-family:helvetica;font-weight:700">Agregar producto</h3>
+                <div style="color: rgb(12, 232, 244);font-size: large;font-weight: bolder;">
+                <label for="producto" style="margin-left: 35px;">Producto:</label>
+                <input maxlength="11" required type="text" class="input" name="producto" sku="producto"  style="margin-left: 48px;width:250px;"><br><br>
+                <label for="descripcion" style="margin-left: 35px;">Descripción</label>
+                <input maxlength="11" required type="text" class="input" name="descripcion" sku="descripcion" style="margin-left: 34px;width:250px;"><br><br>
+                <label for="precio" style="margin-left: 35px;">Precio</label>
+                <input required type="number" class="input" name="precio" sku="precio" min="0" max="999" step="0.01" style="margin-left: 230px;width:100px;"><br>
+                <button type="submit" class="button is-success mt-2" style="margin-left:331px;margin-bottom:41px;">Guardar</button><br><br><br><br><br><br>
+                <a href="{{url_for('productos')}}" class="button is-primary mt-2" style="margin-left:35px;margin-bottom:230.7px;">Volver</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+{% endblock %}

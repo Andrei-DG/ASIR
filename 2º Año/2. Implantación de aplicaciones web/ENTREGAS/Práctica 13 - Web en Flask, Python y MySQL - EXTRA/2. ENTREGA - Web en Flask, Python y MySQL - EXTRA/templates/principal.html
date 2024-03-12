@@ -1,0 +1,28 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Poner un block para que luego pueda ser remplazado en las siguientes plantillas; lo mismo con el  block contenido-->
+    <title>Primark - {% block titulo %}{% endblock %}</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='index.css')}}">
+</head>
+<style>
+  .fondoPrimark {
+/*imagen para los body de las plantillas*/
+    background-image: url("/static/Primark.jpg");
+    background-repeat: space;
+    background-repeat: no-repeat;
+  }
+  
+</style>
+<body class="fondoPrimark">
+
+    {%block contenido %} {% endblock %}
+</body>
+
+</html>

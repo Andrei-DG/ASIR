@@ -1,0 +1,16 @@
+Crea un juego de adivinar un número con apuestas en Python:
+
+
+
+Un usuario al entrar dice el dinero que tiene.
+
+Apuesta una cantidad de ese dinero en cada partida y tiene diez oportunidades para adivinar un numero aleatorio.
+
+No puede apostar más del dinero que le queda.
+
+Con mensaje diciendo si es mayor o no.
+
+Si lo advina gana lo apostado y si falla pierde lo apostado.
+
+Con la posiblidad de volver a jugar si le queda dinero.
+

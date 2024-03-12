@@ -1,0 +1,17 @@
+Crea un supermercado virtual:
+
+
+
+Habrán 5 productos (1,2,3,4,5), el usuario compra solo dos y tiene que elegirlos. 
+
+Mostrar un menú con los productos, su precio y que elija.
+
+Que segun el día de la semana hay descuentos en algún producto.  El lunes el producto1 tiene 20%, el miércoles hay 2x1 del producto3, el viernes hay locura, 70% en todos. Los domingos no se abre.
+
+En el menú de productos tienes que avisar los descuentos que haya.
+
+Habrán Clientes vip, que serán Carlos e Inés, y en el producto 1,2,3 descuento adicional del 10%.
+
+Habrá un Cliente pufo, SrMuro paga un 50% mas, y no tiene descuentos.
+
+Los martes es el día caro,  la factura se sube 20%.

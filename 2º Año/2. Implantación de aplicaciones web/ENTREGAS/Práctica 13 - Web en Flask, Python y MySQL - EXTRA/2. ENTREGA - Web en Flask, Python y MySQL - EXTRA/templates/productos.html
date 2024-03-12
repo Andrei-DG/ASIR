@@ -1,0 +1,110 @@
+
+{% extends "principal.html" %}
+{% block titulo %} productos {% endblock %}
+{% block contenido %}
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<section class="section" style="margin-left: 24px; width:633px;">
+
+
+                <div class="column" style="width: 150px;margin: 10px 0 0 0px;">
+
+                   <form action="{{url_for('filtro_precios')}}" method="post">
+                        <input class="input" required type="number" name="precio" placeholder="Precio" min="0" max="999" step="0.01" >
+                        <button class="button is-dark" type="submit">Filtrar</button>
+                   </form>
+                </div>
+
+
+
+                <div class="column" style="width: 150px;margin-left:250px;margin: -104px 0 0 143px;">
+
+                   <form action="{{url_for('filtro_productos')}}" method="post">
+                        <input class="input" required type="text" name="producto" placeholder="Producto">
+                        <button class="button is-dark" type="submit">Filtrar</button>
+                   </form>
+                </div>
+
+
+                <div class="column" style="width: 150px;margin-left:250px;margin: -105px 0 0 284px;">
+                    <form action="{{url_for('filtro_opcion')}}" method="post">
+                       <div style="display: inline-block;">
+                         <select required name="opcion">
+                            <option value=""></option><option value="A">A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option><option value="E">E</option><option value="F">F</option><option value="G">G</option><option value="H">H</option><option value="I">I</option><option value="J">J</option><option value="K">K</option><option value="L">L</option><option value="M">M</option><option value="N">N</option><option value="Ñ">Ñ</option><option value="O">O</option><option value="P">P</option><option value="Q">Q</option><option value="R">R</option><option value="S">S</option><option value="T">T</option><option value="U">U</option><option value="V">V</option><option value="W">W</option><option value="X">X</option><option value="Y">Y</option><option value="Z">Z</option>
+                         </select>
+                       </div>
+                       <button class="button is-dark" type="submit">Filtrar</button>
+                    </form>
+                 </div>
+                   
+
+                 <div class="column" style="width: 170px;margin-left:240px;margin: -65px 0 0 415px;">
+                    <form action="{{url_for('filtro_rango')}}" method="post">
+                       <div style="display: inline-block;">
+                        <input class="input" required type="number" name="precio_min" min="0" max="999" step="0.01" placeholder="Precio Mínimo" style="width:146px;" min="0" max="999" step="0.01" >
+                        <input class="input" required type="number" name="precio_max" min="0" max="999" step="0.01" placeholder="Precio Máximo" style="width:146px;" min="0" max="999" step="0.01" >
+                       </div>
+                       <button class="button is-dark" type="submit">Filtrar</button>
+                    </form>
+                 </div>
+
+<br>
+            
+            <div>
+                <a href="{{url_for('formulario_agregar_producto')}}" class="button is-success is-large" id="botonAgregar" style="margin-left:65px;margin-right:50px">Agregar</a>
+                <a href="{{url_for('productos')}}" class="button is-info is-large"id="botonMostrarTodos">Mostrar todos</a>
+            </div>
+            <br>
+            <div style="overflow-y: scroll; height:204px; width:585px;">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th style="width:56px;">SKU</th>
+                            <th style="width:104px;">Producto</th>
+                            <th style="width:90px;">Descripción</th>
+                            <th style="width:40px;">Precio</th>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for producto in productos %}
+                        <tr>
+                            <td>{{producto[0]}}</td>
+                            <td>{{producto[1]}}</td>
+                            <td>{{producto[2]}}</td>
+                            <td>{{producto[3]}}</td>
+                            <td>
+                                {# Pasar el SKU (lo que hay en producto[0] #}
+                                <a href="{{url_for('editar_producto', sku=producto[0])}}" class="button is-warning is-medium" style="margin-left:40px;">Editar</a>
+                            </td>
+                            <td>
+                                <form action="{{url_for('eliminar_producto')}}" method="POST">
+                                    <input type="hidden" name="sku" value="{{producto[0]}}">
+                                    <button class="button is-danger is-small">X</button>
+                                </form>
+                            </td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</section>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+{% endblock %}

@@ -1,0 +1,3 @@
+Crea un supermercado virtual:
+
+Con las mismas condiciones, pero haciendo que pueda comprar los productos que quiera, sin estar limitado a dos.

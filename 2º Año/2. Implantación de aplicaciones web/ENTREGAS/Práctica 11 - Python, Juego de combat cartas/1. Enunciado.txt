@@ -1,0 +1,12 @@
+Crea un juego de cartas de combate en Python:
+
+
+
+Se pide al usuario si conoce las reglas del juego, si no, se le muestran. Si las sabe, se inicia el juego (se repiten las cartas y se muestran los resultados)
+
+El juego consiste en que cada jugador recibe una carta y se compara por cada turno con las de los demás jugadores. El jugador que tenga la carta más alta se lleva un punto.
+
+El juego se repite hasta que se acaben las cartas, que dependerá de la cantidad de jugadores elegidos. Sólo se pueden elegir los divisores de 40 = 2,4,5,8,10,20
+
+Al finalizar el juego se mostrará el/los ganador/es y los puntos que ha obtenido cada jugador hasta el último turno.
+

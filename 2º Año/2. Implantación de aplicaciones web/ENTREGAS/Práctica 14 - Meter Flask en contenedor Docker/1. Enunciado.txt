@@ -1,0 +1,11 @@
+Crea el contendor desde un ubuntu con toda la configuración necesaria.
+
+Crea la imagen, sálvala y mándasela a otro compañero que la ejecute.
+
+Ejecuta la imagen que te ha pasado otro compañero.
+
+Sube la imagen a un registro público, DockerHub y a GitHub.
+
+Borra la imagen y vuélvela a crear.
+
+Crea un archivo Dockerfile para crear la imagen.

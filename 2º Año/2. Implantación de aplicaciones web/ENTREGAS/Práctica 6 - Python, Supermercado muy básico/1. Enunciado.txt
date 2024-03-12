@@ -1,0 +1,13 @@
+Crea un supermercado virtual:
+
+
+
+Sin ifs.
+
+Con 5 productos.
+
+Los precios puestos a fuego en el código.
+
+Pregunta la cantidad de cada uno al comprar.
+
+Calcular precio final.
