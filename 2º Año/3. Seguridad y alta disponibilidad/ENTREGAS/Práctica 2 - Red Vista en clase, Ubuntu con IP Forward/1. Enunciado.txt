@@ -1,0 +1,5 @@
+Usa un Ubuntu Server para crear una red que tenga internet.
+
+Hay que usar IP Forward para actuar como un router.
+
+Tiene que haber también dos Lubuntu Desktop en donde se desarrollará esta prueba y las verificaciones.

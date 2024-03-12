@@ -1,0 +1,5 @@
+Instala un Ubuntu Server 22 en VirtualBox.
+
+Añade 3 interfaces: Host-only, NAT y Bridge.
+
+Conéctate desde el anfitrión por SSH a cada una de las interfaces.
