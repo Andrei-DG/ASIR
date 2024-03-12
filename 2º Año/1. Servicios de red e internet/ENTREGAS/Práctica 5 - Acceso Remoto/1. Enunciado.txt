@@ -1,0 +1,18 @@
+Haz un ejemplo de conexión de al menos:
+
+Conexión RDP entre dos windows
+Conexión AnyDesk entre dos linux
+Conexión NoMachine entre dos linux
+Conexión de un linux a un Windows
+
+Explica brevemente las diferencias entre:
+
+RDP
+Anydesk
+No Machine
+VNC
+
+
+
+Opcionalmente (conexiones con VNC, Remmina, usar mobaxterm, teamviewer...)
+Conexión de linux a windows por RDP

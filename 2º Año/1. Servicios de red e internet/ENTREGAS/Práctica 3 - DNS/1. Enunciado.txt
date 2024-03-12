@@ -1,0 +1,50 @@
+Práctica DNS
+1.- DNS cliente:
+Busca todos la información posible de tus dos dominios preferidos.
+
+- encuentra la dirección IP del servidor de nombres de ese dominio, así como del servidor de correo.
+
+- encuentra registros de texto, mail...
+
+Utiliza nslookup y dig. Se harán búsquedas cambiado de servidor (con el 1.1.1.1 y con el 8.8.8.8) y se compararán tiempos de respuesta.
+
+2.- DoH, DoT, DNS sobre https o tls
+Busca información e indica cómo configurarlo.
+
+3.- Servidor DNS (bind9, dnsmasq, Windows Server y ficheros hosts)
+Debemos tener dos servidores ubuntu y un windows
+
+Configura dnsmasq en un ubuntu y comprueba que funciona
+
+Configura bind9 y windows server:
+
+- Crea una zona con nombre.apellido: TXT, MX, A, CNAME (Explicación y muestra de funcionamiento)
+- Modifica el fichero hosts y comprueba su funcionamiento (sobrescribiendo algún nombre de dominio)
+
+4.- Delegación de zonas entre ubuntus y windows server (A realizar en clase)
+
+Zonas master
+
+servidor ubuntu- nombre.apellido.maestro.ubuntu
+
+servidor windows nombre.apellido.maestro.windows
+
+Zona esclava:
+
+zona esclava en ubuntu y windows del dominio del ubuntu
+
+zona esclava en ubuntu del dominio de windows
+
+2) actualización
+
+cambiar un registro y probar que pasa. 
+
+¿Qué tengo que hacer en ubuntu y windows para que se actualice??
+
+Extra:
+
+3) crear un subdominio en los dos dominios dentro del mismo servidor
+
+mismo.nombre.apellido.maestro.ubuntu
+
+mismo.nombre.apellido.maestro.windows

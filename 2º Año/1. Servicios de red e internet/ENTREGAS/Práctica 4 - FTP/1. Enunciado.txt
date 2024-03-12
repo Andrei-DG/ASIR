@@ -1,0 +1,30 @@
+FTP
+
+1) Haz una conexión a un server público y muestra una captura.
+2) En el Filezilla Server crea la siguiente estructura de carpetas:
+/Descargas/FTPCompartirNombre/ Carpeta1/ ejemplow1.txt
+                                                                                / ejemplow2.txt
+                                                             / Carpeta2/ 
+                                                                                 / ejemplor1.txt
+                                                                                / ejemplor2.txt
+Los txt deben tener algo escrito.
+ Crea los siguientes usuarios: NombreUsu1 y NombreUsu2 (donde nombre sea vuestro nombre)
+
+3) En el Filezilla server configura los usuarios para que:
+El NombreUsu1 debe pedir contraseña
+El NombreUsu2 no debe pedir nada
+El NombreUsu1 debe poder escribir en Carpeta1 y solo leer en Carpeta2
+El NombreUsu2 debe poder escribir en Carpeta2
+Muestra capturas donde se aprecie lo anterior. 
+
+4) Haz una conexión desde el otro odenador con filezilla client(revisar firewall) y además debes entrar utilizando un nombre dado por dns.
+ Haz una conexión con NombreUsu1 e indica: Host, nombre y password metida.
+ Crea en Carpeta1 un archivo edito.txt
+ Descarga el archivo ejemplor2.txt de Carpeta2 al escritorio. Muestra capturas o explica el proceso. 
+
+5) En linux muestra un vsftp lanzado (status) e indica la carpeta que se compartirá. En esta carpeta crea una carpeta llamada NoviembreNombre y dentro un archivo que contenga “hola” y se llame hola.txt. 
+
+6) Desde otro linux haz una conexión FTP en un terminal.
+Muestra los comandos para:
+-Bajar al escritorio el archivo hola.txt
+-Subir a la carpeta NoviembreNombre dos archivos a la vez desde el escritorio. (si no tenéis dos archivos los podéis crear)

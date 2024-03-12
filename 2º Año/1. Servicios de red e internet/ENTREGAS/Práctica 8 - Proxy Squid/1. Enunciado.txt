@@ -1,0 +1,33 @@
+Monta en un servidor linux un proxy squid:
+Se debe configurar de la siguiente forma:
+
+--> acceso normal a internet
+
+--> usuarios que acceden al proxy: El mensaje sea "SQUID GAME de ASIR"
+
+profe - profe
+
+nombre - nombre
+
+--> Prohibiciones
+
+--> tiene que conectarse con uno de los usuarios
+
+--> No puede entrar a ninguna red social
+
+--> No puede entrar a máquinas que sean de soccer, deportes, tenis
+
+--> No pueden entrar a as.com
+
+--> No pueden entrar a eldiario.es
+
+Se debe entregar:
+Captura/s de la configuración de prohibiciones
+Captura de archivos externos si se han utilizado
+Captura de poner proxy en el navegador de un ordenador de la red
+Captura entrando a la pantalla de login desde un ordenador de la red
+Captura entrando a una página bloqueada
+
+Extra:
+Poner custom la página de error
+Hacerlo proxy transparente (NUNCA HACERLO EN BRIDGE)

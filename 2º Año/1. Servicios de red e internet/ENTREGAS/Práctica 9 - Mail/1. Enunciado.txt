@@ -1,0 +1,8 @@
+Cliente:
+Crea una cuenta de correo. (Por ejemplo de Gmail (http://www.gmail.com)). Muestra una captura.
+Configura una aplicación de escritorio de correo. thunderbird, correo, outlook...
+Configura una aplicación de correo para móvil para una cuenta que no sea Gmail. (Por ejemplo para el correo de educamadrid)
+
+Servidor:
+Instala algún servicio de correo (Postfix, SquirrelMail, Dovecot...) y manda un mail.
+Muestra capturas explicando la configuración del servidor, mandando un mensaje y dónde se ha recibido

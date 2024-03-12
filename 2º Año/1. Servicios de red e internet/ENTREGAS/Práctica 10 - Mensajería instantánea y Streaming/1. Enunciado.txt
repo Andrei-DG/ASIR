@@ -1,0 +1,8 @@
+Mensajería instantánea
+--> Haz un resumen de lo que consideres más importante en los servicios de mensajería instantánea. (Máximo 2 hojas)
+          https://aulavirtual35.educa.madrid.org/aulas/mod/scorm/view.php?id=15547
+--> Instala algún servicio, como openfire y muestra que lleguen mensajes.
+Streaming
+-->Haz un resumen de lo que consideres más importante en los servicios de streaming: (Máximo 2 hojas)
+https://aulavirtual35.educa.madrid.org/aulas/mod/scorm/view.php?id=15561
+--> Utilizando un servicio de streaming emite en directo desde una máquina y que sea accesible desde otra.

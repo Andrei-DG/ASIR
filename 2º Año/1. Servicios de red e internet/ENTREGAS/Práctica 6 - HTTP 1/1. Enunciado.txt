@@ -1,0 +1,55 @@
+Parte Windows IIS
+Tiene que haber los siguientes sitios web:
+Sitio web 1 llamado Principal:
+      En C:\inetpub\Principal
+      En el puerto 80
+      Dentro de C:\inetpub\Principal debe haber
+                    principal.html   (debe tener un h1-->"Es la principal de NOMBRE" y dos enlaces (a) a HTML/1.html y a HTML/2.html)
+                    HTML (carpeta) /
+                                        1.html   (debe tener un h1-->"Es 1.html)
+                                        2.html   (debe tener un h1-->"Es 2.html)
+
+        Consideraciones: principal.html debe verse como página por defecto del sitio. 1.html debe verse como por defecto de HTML
+
+Sitio web 2 llamado CustomPage:
+      En C:\inetpub\CustomPage
+      En el puerto 8100
+      Dentro de C:\inetpub\CustomPage debe haber
+             miotro.html   (debe tener un h1-->"Es el otro de NOMBRE" )
+             C1 /  (carpeta)
+                            1.txt
+                             2.txt
+             C2 /   (carpeta)
+
+                             3.txt
+                             4.txt
+
+
+ Consideraciones: miotro.html debe verse como página por defecto del sitio. C1 debe permitir ver los archivos y C2 prohibir verlos.
+
+Se deben mostrar capturas de 
+
+localhost:80 
+
+localhost:80/HTML
+
+localhost:80/HTML/2.html
+
+localhost:8100
+
+localhost:8100/c1
+localhost:8100/c2
+
+
+
+
+Parte NGINX
+      - Instalar nginx (poner comando/s)
+      - Configurarlo con lo siguiente:
+             sitio web en el puerto 8432, expondrá lo que haya en /var/www/8432
+                                                                Al entrar en localhost:8432 se verá una web con un h1.> El primer NGINX de NOMBRE
+             sitio web en el puerto 8555, expondrá lo que haya en /var/www/8555
+                                                                Dentro habrá un html llamado elotro.html y una carpeta con dos archivos .txt llamada c1
+                                                                Al entrar en localhost:8555 se verá una web con un h1.> Custom file NGINX de NOMBRE
+                                                                Al entrar en localhost:8555/c1 se verán los archivos
+             Muestra las capturas y comandos utilizados.

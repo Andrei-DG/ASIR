@@ -1,0 +1,58 @@
+Parte Apache
+
+    HTTP 8030
+
+	/var/www/8030
+
+			1.txt
+
+			/Forbidden
+
+    HTTP 8050
+
+	/var/www/8050
+
+			8050.html --> con un h1
+
+			/Visible
+
+				1.txt
+
+				2.txt
+
+	localhost:8030 --> se ve 1.txt y la carpeta forbidden
+
+	localhost:8030/Forbidden --> se ve error Forbidden
+
+	localhost:8050 --> Se ve el h1 de 8050.html
+
+	localhost:8050/Visible --> se ve 1.txt y 2.txt
+
+
+Parte Apache HTTPs
+
+       Puerto 8084
+       Parte de /var/www/8084
+
+       Dentro contiene:
+                   miapacheseguro.html —> (h1 —> servidorApache Seguro de (nombre))
+
+       Default page miapacheseguro.html Irá sobre HTTPS
+ Se deben mostrar capturas de los archivos ports.conf, el .conf y el servidor abierto desde el navegador.
+
+
+
+Parte XAMPP
+
+          iniciar apache y mysql en xampp
+          apache escuche en el puerto 8777
+          que se vea en el navegador un index que ponga "ASIR2 lanza un XAMPP en el 8777"
+
+ Se deben mostrar capturas de los archivos modificador y  el servidor abierto desde el navegador.
+
+
+Exponer a internet:
+- Lanzar un servidor a internet con NGROK
+
+Extra 1: Exponer un servidor abriendo un puerto del router de casa
+Extra 2: lanzar un LAMP y hacer lo mismo que en XAMPP pero en otro puerto
