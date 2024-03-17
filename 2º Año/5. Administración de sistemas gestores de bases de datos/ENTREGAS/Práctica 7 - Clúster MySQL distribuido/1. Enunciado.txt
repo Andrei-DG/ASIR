@@ -1,0 +1,16 @@
+Hacer un tutorial breve de cómo montar un cluster mysql (Máximo 3 hojas).
+
+Podéis seguir los tutoriales del aula para hacerlo con docker, también podéis usar un docker compose como este (modificando lo que necesitéis)
+https://github.com/mlucasdasilva/cluster-mysql/blob/master/docker-compose.yml
+
+Debe tener:
+1 nodo de gestión
+2 nodos de datos
+2/3 nodos mysql
+
+Si solo tiene un nodo mysql la nota de la práctica será máximo un 8,5 dependiendo de la calidad de la explicación.
+
+Una vez funcionando se debe mostrar un show del nodo de gestión:
+
+ndb_mgm> show
+Y por otro lado se debe mostrar alguna sentencia sql ejecutada en la base de datos
