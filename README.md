@@ -1,5 +1,5 @@
 # ASIR
-Este repositorio contiene mis prácticas personales recopiladas en PDF del G.S. ASIR, algunas no disponibles/recuperadas por su tamaño/naturaleza práctica.
+Este repositorio contiene mis prácticas personales recopiladas del G.S. ASIR, algunas no disponibles/recuperadas por su tamaño/naturaleza práctica.
 Están organizadas por año, asignatura, orden de aprendizaje, enunciado y entrega para facilitar su búsqueda y referencia.
 Pretende servir como muestra del trabajo realizado durante el curso y de mi enfoque en la resolución de problemas prácticos en entornos de sistemas informáticos.
 
