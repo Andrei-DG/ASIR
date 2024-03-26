@@ -1,0 +1,16 @@
+Configurar el esquema de redes de la figura usando encaminamiento dinámico OSPF teniendo en cuenta las siguientes condiciones:
+
+1) Cambiar el ancho de banda de referencia a 100.000
+
+2) Las redes del area cero deben configurarse con las siguientes conexiones:
+
+100.100.100.0/30 Gigabit ethernet
+100.100.100.4/30 Ethernet
+100.100.100.8/30 Fast Ethernet
+3) Configurar primer el area 0 comprobando se encaminan las redes loopback y hacer ping entre ellas comprobando la conexión (nota: ejecutar el comando ping en los routers sin ningún argumento para poder indicar red fuente y red destino )
+
+4) Configurar a continuación las otras áreas. Probar la conectividad entre todas las áreas.
+
+5) Trata de ver capturando con wireshark la diferente información que se intercambian en cada área.
+
+Subir el proyecto, usando la opción export portable project.

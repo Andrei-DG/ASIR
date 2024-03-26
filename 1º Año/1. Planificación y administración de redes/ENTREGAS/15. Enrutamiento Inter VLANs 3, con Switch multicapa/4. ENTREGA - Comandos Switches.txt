@@ -1,0 +1,163 @@
+(S0)
+enable
+show vlan
+show run
+configure terminal
+vlan 1
+exit
+vlan 40
+name personal
+exit
+vlan 60
+name finanzas
+end
+configure terminal
+interface g0/1
+switchport mode trunk
+no shutdown
+end
+configure terminal
+interface f0/1
+switchport mode access
+switchport access vlan 40
+no shutdown
+end
+configure terminal
+interface f0/2
+switchport mode access
+switchport access vlan 60
+no shutdown
+end
+configure terminal
+interface f0/3
+switchport mode access
+switchport access vlan 1
+no shutdown
+end
+copy running-config startup-config
+
+
+
+(SM)
+enable
+show vlan
+show run
+configure terminal
+vlan 1
+exit
+vlan 40
+name personal
+exit
+vlan 60
+name finanzas
+end
+enable
+configure terminal
+interface f0/1
+switchport mode access
+switchport access vlan 1
+no shutdown
+end
+configure terminal
+interface f0/3
+switchport mode access
+switchport access vlan 60
+no shutdown
+end
+enable
+configure terminal
+interface vlan 1
+ip address 172.20.0.1 255.255.0.0
+no shutdown
+end
+configure terminal
+interface vlan 40
+ip address 192.168.10.1 255.255.255.0
+no shutdown
+end
+configure terminal
+interface vlan 60
+ip address 172.30.0.1 255.255.0.0
+no shutdown
+end
+configure terminal
+ip routing
+end
+copy running-config startup-config
+
+
+
+(S1)
+enable
+show vlan
+show run
+configure terminal
+vlan 1
+exit
+vlan 40
+name personal
+exit
+vlan 60
+name finanzas
+end
+configure terminal
+interface g0/1
+switchport mode trunk
+no shutdown
+end
+configure terminal
+interface f0/1
+switchport mode access
+switchport access vlan 1
+no shutdown
+end
+configure terminal
+interface f0/2
+switchport mode access
+switchport access vlan 60
+no shutdown
+end
+configure terminal
+interface f0/3
+switchport mode access
+switchport access vlan 40
+no shutdown
+end
+copy running-config startup-config
+
+
+(PC0)
+IP: 192.168.10.10  Máscara: 255.255.255.0
+Gateway por defecto: 192.168.10.1
+
+(PC1)
+IP: 172.30.0.10  Máscara: 255.255.0.0
+Gateway por defecto: 172.30.0.1
+
+(PC2)
+IP: 192.168.10.11  Máscara: 255.255.255.0
+Gateway por defecto: 192.168.10.1
+
+(PC3)
+IP: 172.30.0.11 Máscara: 255.255.0.0
+Gateway por defecto: 172.30.0.1
+
+(PC4)
+IP: 192.168.10.12 Máscara: 255.255.255.0
+Gateway por defecto: 192.168.10.1
+
+(PC5)
+IP: 172.30.0.12 Máscara: 255.255.0.0
+Gateway por defecto: 172.30.0.1
+
+(PC6)
+IP: 172.20.0.10 Máscara: 255.255.0.0
+Gateway por defecto: 172.20.0.1
+
+(PC7)
+IP: 172.20.0.11 Máscara: 255.255.0.0
+Gateway por defecto: 172.20.0.1
+
+(PC8)
+IP: 172.20.0.12 Máscara: 255.255.0.0
+Gateway por defecto: 172.20.0.1

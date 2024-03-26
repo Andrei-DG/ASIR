@@ -1,0 +1,1 @@
+Tal como hemos hecho en clase con el protocolo VRRP configurar la red de la figura con gateway redundante con el protocolo HSRP de CISCO. Hacer la configuración en packet tracer y subirla como respuesta.

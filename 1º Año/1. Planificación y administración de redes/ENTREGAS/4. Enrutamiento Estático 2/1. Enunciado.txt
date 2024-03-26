@@ -1,0 +1,1 @@
+Configurar en packet tracer la red de la figura. Con encaminamiento estático, salida a internet a través de dirección por defecto (default). Solo para internet. Crear rutas estáticas flotantes para que si cae un router se pueda ir por una ruta alternativa 

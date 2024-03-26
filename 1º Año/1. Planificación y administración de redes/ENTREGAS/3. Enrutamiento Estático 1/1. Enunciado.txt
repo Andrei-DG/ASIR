@@ -1,0 +1,5 @@
+Configurar los routers de la figura con encaminamiento estático. Usa comandos en los routers.
+
+Subir el fichero de packet tracer. 
+
+La configuración de los routers debe guardarse para que persista cuando se vuelvan a encender.

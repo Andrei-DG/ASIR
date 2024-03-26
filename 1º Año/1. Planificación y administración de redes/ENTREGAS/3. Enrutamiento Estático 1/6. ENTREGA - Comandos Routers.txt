@@ -1,0 +1,43 @@
+(Router A)
+enable
+configure terminal
+interface GigabitEthernet0/0
+ip address 183.67.4.2 255.255.255.0
+no shutdown
+ip address 23.210.86.19 255.255.255.0
+no shutdown
+ip route 183.67.3.0 255.255.255.0 183.67.3.1
+ip route 183.67.2.0 255.255.255.0 183.67.2.5
+exit
+copy running-config startup-config
+
+(Router B)
+enable
+configure terminal
+interface GigabitEthernet0/0
+ip address 183.67.3.1 255.255.255.0
+no shutdown
+interface GigabitEthernet0/1
+ip address 183.67.2.5 255.255.255.0
+no shutdown
+interface GigabitEthernet0/2
+ip address 183.67.4.1 255.255.255.0
+no shutdown
+ip route 183.67.1.0 255.255.255.0 183.67.2.1
+ip route 0.0.0.0 0.0.0.0 183.67.4.2
+exit
+copy running-config startup-config
+
+(Router C)
+enable
+configure terminal
+ip address 183.67.1.1 255.255.255.0
+no shutdown
+exit
+ip address 183.67.2.1 255.255.255.0
+no shutdown
+exit
+ip route 183.67.3.0 255.255.255.0 183.67.2.5
+ip route 183.67.4.0 255.255.255.0 183.67.2.5
+exit
+copy running-config startup-config

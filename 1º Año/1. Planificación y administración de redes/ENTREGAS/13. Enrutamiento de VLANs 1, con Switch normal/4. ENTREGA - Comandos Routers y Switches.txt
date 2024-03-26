@@ -1,0 +1,115 @@
+(R0)
+enable
+configure terminal
+
+int G0/0.1
+encapsulation dot1Q 1
+ip add 10.0.0.1 255.255.255.0
+no shutdown
+int G0/0.20
+encapsulation dot1Q 20
+ip add 172.16.0.1 255.255.255.0
+no shutdown
+interface G0/0.30
+encapsulation dot1Q 30
+ip add 192.168.1.1 255.255.255.0
+no shutdown
+exit
+interface G0/0
+no shutdown
+exit
+exit
+copy running-config startup-config
+-------------------------------------
+(S1)
+enable
+configure terminal
+
+vlan 1
+name VLAN1
+exit
+interface G0/1
+switchport mode access
+switchport access vlan 1
+exit
+interface G1/1
+switchport mode access
+switchport access vlan 1
+exit
+
+vlan 20
+name VLAN20Invitados
+exit
+interface G2/1
+switchport mode access
+switchport access vlan 20
+exit
+interface G3/1
+switchport mode access
+switchport access vlan 20
+exit
+
+vlan 30
+name VLAN30Voz
+exit
+interface G4/1
+switchport mode access
+switchport voice vlan 30
+exit
+interface G5/1
+switchport mode access
+switchport voice vlan 30
+exit
+interface G6/1
+switchport mode trunk
+exit
+exit
+copy running-config startup-config
+-------------------------------------
+(S2)
+enable
+configure terminal
+
+vlan 1
+name VLAN1
+exit
+interface G0/1
+switchport mode access
+switchport access vlan 1
+exit
+
+vlan 20
+name VLAN20Invitados
+exit
+interface G1/1
+switchport mode access
+switchport access vlan 20
+exit
+
+vlan 30
+name VLAN30Voz
+exit
+interface G2/1
+switchport voice vlan 30
+exit
+
+interface G3/1
+switchport mode trunk
+no shutdown
+interface G4/1
+switchport mode trunk
+no shutdown
+exit
+exit
+copy running-config startup-config
+-------------------------------------
+(PC0) 10.0.0.10/24 10.0.0.1
+(PC1) 10.0.0.11/24 10.0.0.1
+(PC2) 172.16.0.10/24 172.16.0.1
+(PC3) 172.16.0.11/24 172.16.0.1
+(PC4) 192.168.1.10/24 192.168.1.1
+(PC5) 192.168.1.11/24 192.168.1.1
+
+(PC6) 10.0.0.12/24 10.0.0.1
+(PC7) 172.16.0.12/24 172.16.0.1
+(PC8) 192.168.1.12/24 192.168.1.1

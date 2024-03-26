@@ -1,0 +1,1 @@
+Completar la configuración del fichero de packet tracer para establecer rutas estáticas alternativas entre las redes.

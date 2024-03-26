@@ -1,0 +1,119 @@
+(S1) EJPARA CONFIGURAR MÁS RÁPIDO Y SOLO truco - NO COPIAR
+enable
+configure terminal
+
+vlan 1
+name VLAN1
+exit
+interface range f0/1-6
+switchport mode access
+switchport access vlan 1
+exit
+exit
+copy running-config startup-config
+----------------------------------------------------------
+(S1)
+enable
+configure terminal
+
+vlan 1
+name VLAN1
+exit
+interface range G0/1
+switchport mode access
+switchport access vlan 1
+exit
+interface G1/1
+switchport mode access
+switchport access vlan 1
+exit
+
+vlan 20 
+name VLAN20Invitados
+exit
+interface G2/1
+switchport mode access
+switchport access vlan 20
+exit
+interface G3/1
+switchport mode access
+switchport access vlan 20
+exit
+
+vlan 30
+name VLAN30Voz
+exit
+interface G4/1
+switchport mode access
+switchport voice vlan 30
+exit
+interface G5/1
+switchport mode access
+switchport voice vlan 30
+exit
+interface G6/1
+switchport mode trunk
+exit
+exit
+copy running-config startup-config
+----------------------------------------------------------
+(SWITCH MULTICAPA)
+enable
+configure terminal
+ip routing
+
+vlan 1
+name VLAN1
+exit
+interface vlan 1
+ip address 10.0.0.1 255.255.255.0
+no shutdown
+exit
+interface G1/0/2
+switchport mode access
+switchport access vlan 1
+exit
+
+vlan 20
+name VLAN20Invitados
+exit
+interface vlan 20
+ip address 172.16.0.1 255.255.255.0
+no shutdown
+exit
+interface G1/0/3
+switchport mode access
+switchport access vlan 20
+exit
+
+vlan 30
+name VLAN30Voz
+exit
+interface vlan 30
+ip address 192.168.1.1 255.255.255.0
+no shutdown
+exit
+interface G1/0/4
+switchport mode access
+switchport access vlan 30
+no shutdown
+exit
+exit
+copy running-config startup-config
+----------------------------------------------------------
+(PC0) 10.0.0.10/24 10.0.0.1
+(PC1) 10.0.0.11/24 10.0.0.1
+(PC2) 172.16.0.10/24 172.16.0.1
+(PC3) 172.16.0.11/24 172.16.0.1
+(PC4) 192.168.1.10/24 192.168.1.1
+(PC5) 192.168.1.11/24 192.168.1.1
+
+(PC6) 10.0.0.12/24 10.0.0.1
+(PC7) 172.16.0.12/24 172.16.0.1
+(PC8) 192.168.1.12/24 192.168.1.1
+
+
+
+
+
+

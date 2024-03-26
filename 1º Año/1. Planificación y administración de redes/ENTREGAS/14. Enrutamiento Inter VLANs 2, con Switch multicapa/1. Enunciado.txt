@@ -1,0 +1,3 @@
+Usando el mismo esquema del ejercicio 1 de Vlans, sustituir uno de los switch por un switch multilayer y configurarlo para que haya enrutamiento entre las Vlans.
+
+Usar packet tracer.

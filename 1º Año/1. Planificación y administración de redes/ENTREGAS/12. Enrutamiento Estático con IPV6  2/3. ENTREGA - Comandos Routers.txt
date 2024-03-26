@@ -1,0 +1,42 @@
+(R1)
+enable
+configure terminal
+int g1/0
+ipv6 address 2001:0:0:CAFE::1/64
+no shutdown
+int g2/0
+ipv6 address 2001:0:0:ABBA::1/64
+no shutdown
+int g3/0
+ipv6 address 2001:BEA:EA:EA::1/64
+no shutdown
+exit
+ipv6 unicast-routing
+ipv6 route 2001:BEA:FEA::/64 2001:BEA:EA:EA::2
+exit
+copy running-config startup-config
+
+(R2)
+enable
+configure terminal
+int g1/0
+ipv6 address 2001:BEA:EA:EA::2/64
+no shutdown
+int g2/0
+ipv6 address 2001:BEA:FEA::1/64
+no shutdown
+exit
+ipv6 unicast-routing
+ipv6 route 2001:0:0:CAFE::/64 2001:BEA:EA:EA::1
+ipv6 route 2001:0:0:ABBA::/64 2001:BEA:EA:EA::1
+exit
+copy running-config startup-config
+
+(PC1)
+ip 2001:0:0:CAFE::10/64 2001:0:0:CAFE::1
+save
+(PC2)
+ip 2001:0:0:ABBA::10/64 2001:0:0:ABBA::1
+save
+(PC3)
+ip 2001:BEA:FEA::10/64 2001:BEA:FEA::1

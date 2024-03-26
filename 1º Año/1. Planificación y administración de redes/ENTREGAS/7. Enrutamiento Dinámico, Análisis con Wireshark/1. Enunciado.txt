@@ -1,0 +1,17 @@
+Configurar en GNS3 la red de la figura.
+
+Analizar con wireshark lo que se indica. Redistribuir la red configurada estáticamente para que se propague por la parte dinámica configurada con RIP. Configurar adecuadamente los interfaces "pasivos" en RIP
+
+Modificar los timers en RIP y observar los cambios con wireshark.
+
+Entregar capturas de pantalla de:
+
+1) Captura de pantalla del proyecto gns3
+
+1) Tabla de encaminamiento del router que hace encaminamiento estático y dinámico y de un router que haga encaminamiento dinámico.
+
+2) De los mismos routers, base de datos rip, (show ip rip database)
+
+3) De los mismos routers; salida del comando show ip protocol
+
+4) Captura wireshark filtrando los protocolos ICMP y RIP, haciendo un ping entre el equipo Windows y un ordenador (VPCS) entre dos routers cualesquiera de la red.

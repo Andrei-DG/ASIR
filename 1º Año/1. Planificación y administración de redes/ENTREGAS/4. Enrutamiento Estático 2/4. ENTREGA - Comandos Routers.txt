@@ -1,0 +1,136 @@
+(R0)1
+enable
+configure terminal
+interface GigabitEthernet0/1
+ip address 14.0.0.1 255.0.0.0
+no shutdown
+exit
+interface GigabitEthernet0/0
+ip address 16.0.0.2 255.0.0.0
+no shutdown
+exit
+ip route 88.0.0.0 255.0.0.0 GigabitEthernet0/0
+ip route 88.0.0.0 255.0.0.0 16.0.0.1
+ip route 88.0.0.0 255.0.0.0 GigabitEthernet0/1 50
+ip route 88.0.0.0 255.0.0.0 14.0.0.2 50
+
+ip route 130.0.0.0 255.255.0.0 GigabitEthernet0/0
+ip route 130.0.0.0 255.255.0.0 16.0.0.1
+ip route 130.0.0.0 255.255.0.0 GigabitEthernet0/1 50
+ip route 130.0.0.0 255.255.0.0 14.0.0.2 50
+
+ip route 131.0.0.0 255.255.0.0 GigabitEthernet0/1
+ip route 131.0.0.0 255.255.0.0 14.0.0.2
+ip route 131.0.0.0 255.255.0.0 GigabitEthernet0/0 50
+ip route 131.0.0.0 255.255.0.0 16.0.0.1 50
+exit
+copy running-config startup-config
+
+(R1)2
+enable
+configure terminal
+interface GigabitEthernet0/0
+ip address 16.0.0.1 255.0.0.0
+no shutdown
+exit
+interface GigabitEthernet0/2
+ip address 88.0.0.1 255.0.0.0
+no shutdown
+exit
+interface GigabitEthernet0/1
+ip address 130.0.0.2 255.255.0.0
+no shutdown
+exit
+ip route 14.0.0.0 255.0.0.0 GigabitEthernet0/0
+ip route 14.0.0.0 255.0.0.0 16.0.0.2
+ip route 14.0.0.0 255.0.0.0 GigabitEthernet0/1 50
+ip route 14.0.0.0 255.0.0.0 130.0.0.1 50
+
+ip route 131.0.0.0 255.255.0.0 GigabitEthernet0/1
+ip route 131.0.0.0 255.255.0.0 130.0.0.1
+ip route 131.0.0.0 255.255.0.0 GigabitEthernet0/0 50
+ip route 131.0.0.0 255.255.0.0 16.0.0.2 50
+exit
+copy running-config startup-config
+
+(R2)3
+enable
+configure terminal
+interface GigabitEthernet0/0
+ip address 14.0.0.2 255.0.0.0
+no shutdown
+exit
+interface GigabitEthernet0/1
+ip address 131.0.0.1 255.255.0.0
+no shutdown
+exit
+ip route 16.0.0.0 255.0.0.0 GigabitEthernet0/0
+ip route 16.0.0.0 255.0.0.0 14.0.0.1
+ip route 16.0.0.0 255.0.0.0 GigabitEthernet0/1 50
+ip route 16.0.0.0 255.0.0.0 131.0.0.2 50
+
+ip route 88.0.0.0 255.0.0.0 GigabitEthernet0/0
+ip route 88.0.0.0 255.0.0.0 14.0.0.1
+ip route 88.0.0.0 255.0.0.0 GigabitEthernet0/1 50
+ip route 88.0.0.0 255.0.0.0 131.0.0.2 50
+
+ip route 130.0.0.0 255.255.0.0 GigabitEthernet0/1
+ip route 130.0.0.0 255.255.0.0 131.0.0.2
+ip route 130.0.0.0 255.255.0.0 GigabitEthernet0/0 50
+ip route 130.0.0.0 255.255.0.0 14.0.0.1 50
+exit
+copy running-config startup-config
+
+(R3)4
+enable
+configure terminal
+interface GigabitEthernet0/1
+ip address 130.0.0.1 255.255.0.0
+no shutdown
+exit
+interface GigabitEthernet0/0
+ip address 131.0.0.2 255.255.0.0
+no shutdown
+exit
+ip route 14.0.0.0 255.0.0.0 GigabitEthernet0/0
+ip route 14.0.0.0 255.0.0.0 131.0.0.1
+ip route 14.0.0.0 255.0.0.0 GigabitEthernet0/1 50
+ip route 14.0.0.0 255.0.0.0 130.0.0.2 50
+
+ip route 16.0.0.0 255.255.0.0 GigabitEthernet0/1
+ip route 16.0.0.0 255.255.0.0 130.0.0.2
+ip route 16.0.0.0 255.255.0.0 GigabitEthernet0/0 50
+ip route 16.0.0.0 255.255.0.0 131.0.0.1 50
+
+ip route 88.0.0.0 255.0.0.0 GigabitEthernet0/1
+ip route 88.0.0.0 255.0.0.0 130.0.0.2
+ip route 88.0.0.0 255.0.0.0 GigabitEthernet0/0 50
+ip route 88.0.0.0 255.0.0.0 131.0.0.1 50
+exit
+copy running-config startup-config
+
+----------------------------------------------------
+
+(PCO)
+IP: 14.0.0.10 Máscara: 255.0.0.0
+Gateway por defecto: 14.0.0.1
+
+(PC1)
+IP: 16.0.0.10 Máscara: 255.0.0.0
+Gateway por defecto: 16.0.0.1
+
+(PC2) 
+IP: 130.0.0.10 Máscara: 255.255.0.0
+Gateway por defecto: 130.0.0.1
+
+(PC3) 
+IP: 131.0.0.10 Máscara: 255.255.0.0
+Gateway por defecto: 131.0.0.1
+
+(SERVER-PT WWW.INTERNET.COM)
+IP: 88.88.88.88 Máscara: 255.0.0.0
+Gateway por defecto: 88.0.0.1
+
+(SERVER-PT ServidorDNS)
+IP: 14.0.0.11 Máscara: 255.0.0.0
+Gateway por defecto: 14.0.0.1

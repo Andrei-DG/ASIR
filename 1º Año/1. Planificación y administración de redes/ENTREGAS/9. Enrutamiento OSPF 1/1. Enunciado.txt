@@ -1,0 +1,1 @@
+Configurar en GNS3, exportar el proyecto (portable con imágenes) y subirlo como respuesta

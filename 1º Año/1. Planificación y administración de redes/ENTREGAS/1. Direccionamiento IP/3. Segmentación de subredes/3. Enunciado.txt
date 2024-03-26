@@ -1,0 +1,7 @@
+La red 172.16.0.0/16 dividirla en subredes  para que en cada una de ellas se puedan configurar un máximo de 400 equipos (hosts).
+
+a) Dar las direcciones de red, broadcast, primera y última dirección de hosts de las cuatro primeras subredes.
+
+b) Dirección de red, broadcast, primera y última dirección de hosts de las décima subred.
+
+c) ¿Cuántas subredes podemos configurar?

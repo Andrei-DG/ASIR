@@ -1,0 +1,3 @@
+Configurar el esquema para que haya enrutamiento entre las Vlans y funcione con un Switch multicapa entre los dos routers.
+
+Usar packet tracer.

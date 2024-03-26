@@ -1,0 +1,1 @@
+Configurar con encaminamiento estático ipv6 el esquema de la figura para que haya conectividad entre todos los equipos 

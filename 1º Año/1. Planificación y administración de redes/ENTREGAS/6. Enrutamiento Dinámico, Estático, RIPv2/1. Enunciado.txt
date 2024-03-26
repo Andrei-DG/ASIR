@@ -1,0 +1,5 @@
+Configurar los routers y host de la figura para que haya conectividad entre todos ellos usando el protocolo de encaminamiento dinámico RIPv2.
+
+Las rutas hacia el servidor internet deben ser estáticas.
+
+Utilizar el fichero packet tracer que se adjunta en la tarea para realizar la práctica. 
