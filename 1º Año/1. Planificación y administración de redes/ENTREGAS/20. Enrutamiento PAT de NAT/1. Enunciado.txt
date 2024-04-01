@@ -1,0 +1,1 @@
+Configurar en packet tracer el esquema de la figura con PAT. Para una única dirección ip pública 50.0.0.1. No tengáis en cuenta, por tanto, el texto de la imagen

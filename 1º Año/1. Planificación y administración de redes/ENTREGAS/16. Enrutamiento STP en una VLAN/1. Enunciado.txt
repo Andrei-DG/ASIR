@@ -1,0 +1,1 @@
+Según el esquema mostrado realiza una conexión con Spanning Tree Protocol (STP) para que en el Switch 2 en sus interfaces Fa4 y Fa5 se calcule y busque la opción más rápida para transmitir y recibir datos desde PC4 a PC1,2,3 y/o viceversa.

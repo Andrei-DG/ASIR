@@ -1,0 +1,15 @@
+Configurar lo siguiente en el router inalámbrico prestado en clase:
+
+Para comenzar dejar configurada una máquina virtual (Windows o Linux) en vuestro ordenador como adaptador puente (bridge). Conectar el router a la red del centro (conector internet) y ordenador a un puerto ethernet del router.
+
+1) Cambiar SSID y password de la red creada del router.
+
+2) Combrobar la IP asignada a la máquina virtual. Comprobar que funciona internet. Hacer un traceroute a www.google.es y comprobar por qué direcciones pasa (IP del router, puerta de enlace del instituto,...) Conectar el móvil a la red inalámbrica.
+
+3) Cambiar en el router el rango de direcciones DHCP a 50-99. Deshabilitar y habilitar el adaptador de red de la máquina virtual y comprobar qué ip le asigna ahora.
+
+4) Instalar Wifi Analyzer desde la play store en vuestro móvil. Comprobar los canales en uso y en qué canal está vuestra red. Cambiar el canal manualmente en el router el canal de vuestra red
+
+5) Configurar el DMZ en el router y una IP estática para un servidor en la red desmilitarizada (DMZ)
+
+6)  Configurar Filtros (de Mac Address por ejemplo) y red de invitados

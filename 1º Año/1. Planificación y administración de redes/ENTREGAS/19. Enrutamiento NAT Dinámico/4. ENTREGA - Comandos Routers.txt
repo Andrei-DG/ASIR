@@ -1,0 +1,39 @@
+(R0)
+enable
+configure terminal
+int G0/0
+ip add 172.16.0.1 255.255.0.0
+no shutdown
+int G0/1
+ip add 120.120.120.1 255.255.255.252
+no shutdown
+exit
+ip route 34.0.0.0 255.128.0.0 120.120.120.2
+ip route 0.0.0.0 0.0.0.0 120.120.120.2
+exit
+copy running-config startup-config
+
+(R1)
+enable
+configure terminal
+int G0/0
+ip add 120.120.120.2 255.255.255.252
+ip nat inside
+no shutdown
+int G0/1
+ip add 34.0.0.1 255.128.0.0
+ip nat outside
+no shutdown
+exit
+ip nat pool NATDinamico1 52.0.0.1 52.0.0.6 netmask 255.255.255.248
+access-list 1 permit 172.16.0.10
+access-list 1 permit 172.16.0.11
+access-list 1 permit 172.16.0.12
+access-list 1 permit 172.16.0.13
+access-list 1 permit 172.16.0.14
+access-list 1 permit 172.16.0.15
+ip nat inside source list 1 pool NATDinamico1
+ip route 172.16.0.0 255.255.0.0 120.120.120.1
+ip route 0.0.0.0 0.0.0.0 120.120.120.1
+exit
+copy running-config startup-config

@@ -1,0 +1,31 @@
+(R0)
+enable
+configure terminal
+int G0/0
+ip add 30.0.0.1 255.0.0.0
+no shutdown
+int G0/1
+ip add 20.0.0.1 255.0.0.0
+no shutdown
+ip route 10.0.0.0 255.0.0.0 20.0.0.2
+ip route 50.0.0.0 255.0.0.0 20.0.0.2
+exit
+copy running-config startup-config
+
+(R1)
+enable
+configure terminal
+int G0/0
+ip add 20.0.0.2 255.0.0.0
+no shutdown
+ip nat inside source static 10.0.0.2 50.0.0.1
+int G0/0
+ip nat outside
+int G0/1
+ip add 10.0.0.1 255.0.0.0
+no shutdown
+ip route 30.0.0.0 255.0.0.0 20.0.0.1
+int G0/1
+ip nat inside
+exit
+copy running-config startup-config

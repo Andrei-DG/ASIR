@@ -1,0 +1,65 @@
+(R1)
+enable
+configure terminal
+int g0/0
+ip add 172.16.0.1 255.255.0.0
+no shutdown
+int g0/1
+ip add 120.120.120.1 255.255.255.252
+no shutdown
+ip route 34.0.0.0 255.128.0.0 120.120.120.2
+do copy running-config startup-config
+
+(R2)
+enable
+configure terminal
+int g0/0
+ip add 120.120.120.2 255.255.255.252
+ip nat inside
+no shutdown
+int g0/1
+ip add 34.0.0.1 255.128.0.0
+ip nat outside
+no shutdown
+exit
+ip nat pool nat1 172.16.0.10 172.16.0.15 netmask 255.255.0.0
+ip nat pool nat2 172.15.0.10 172.15.0.15 netmask 255.255.0.0
+ip nat inside source list 1 pool nat1 overload
+ip route 172.16.0.0 255.255.0.0 120.120.120.1
+access-list 1 permit host 172.16.0.10
+access-list 1 permit host 172.16.0.11
+access-list 1 permit host 172.16.0.12
+access-list 1 permit host 172.16.0.13
+access-list 1 permit host 172.16.0.14
+access-list 1 permit host 172.16.0.15
+do copy running-config startup-config
+
+---------------------------------------
+
+(Server0)
+IP: 34.0.0.2 Máscara: 255.128.0.0
+Gateway por defecto: 34.0.0.1
+
+(PC0)
+IP: 172.16.0.11 Máscara: 255.255.0.0
+Gateway por defecto: 172.16.0.1
+
+(PC1)
+IP: 172.16.0.12 Máscara: 255.255.0.0
+Gateway por defecto: 172.16.0.1
+
+(PC2)
+IP: 172.16.0.13 Máscara: 255.255.0.0
+Gateway por defecto: 172.16.0.1
+
+(PC3)
+IP: 172.16.0.10 Máscara: 255.255.0.0
+Gateway por defecto: 172.16.0.1
+
+(PC4)
+IP: 172.16.0.14 Máscara: 255.255.0.0
+Gateway por defecto: 172.16.0.1
+
+(PC5)
+IP: 172.16.0.15 Máscara: 255.255.0.0
+Gateway por defecto: 172.16.0.1

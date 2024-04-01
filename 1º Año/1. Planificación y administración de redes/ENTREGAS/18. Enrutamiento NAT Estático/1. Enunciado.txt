@@ -1,0 +1,1 @@
+Subir en packet tracer (o GNS3) la configuración de NAT estático propuesta en la pizarra en clase (imagen).

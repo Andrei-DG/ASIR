@@ -1,0 +1,1 @@
+Configurar en packet tracer el esquema de la figura con NAT dinámico.
